@@ -1,7 +1,4 @@
-magazinator
+Fatalator
 ===========
 
-Go to MagazineLuiza
-
-
-https://chrome.google.com/webstore/detail/magazinator/jhiijemnefknmpocmlfopjfhdeondimg
+Plugin para quem gosta de entrar no Facebook no horário de trabalho.
