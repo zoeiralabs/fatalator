@@ -21,6 +21,13 @@
     ];
 
     var createFatalator = function(keyword) {
+        if (keyword == "linkedin") {
+            var msg = 'Procurando emprego né safado? ¬¬'
+        }
+        else {
+            var msg = 'Entrando no <span id="fatalator-host" style="text-transform: capitalize; color: #434358; font-weight: bold">' + keyword + '</span> né safado?<br>tá sem trampo? ¬¬';
+        }
+
         var d = document.createElement('DIV'); 
         d.id = 'fatalator';
         d.style.width = '800px';
@@ -34,7 +41,7 @@
         d.style.border = '2px #434358 solid';
         d.style.zIndex = '999999999999';
         d.innerHTML += '<div style="width: 395px; height: 600px; float: left; text-align: center; background: #1D8FCE"><img src="' + chrome.extension.getURL('images/big-head.png') + '"></div>';
-        d.innerHTML += '<div style="width: 400px; height: 600px; float: right; text-align: left; background: #1D8FCE; font: 40pt Arial; color: #000000"><br><br>Entrando no <span id="fatalator-host" style="text-transform: capitalize; color: #434358; font-weight: bold">' + keyword + '</span> né safado?<br>tá sem trampo? ¬¬<br><br><a href="javascript:void(0)" id="fatalator-close" style="font: 25pt Arial; color: lightblue; text-decoration: underline">Sim, fechar o Fatalator!</a></div>';
+        d.innerHTML += '<div style="width: 400px; height: 600px; float: right; text-align: left; background: #1D8FCE; font: 40pt Arial; color: #000000"><br><br>' + msg + '<br><br><a href="javascript:void(0)" id="fatalator-close" style="font: 25pt Arial; color: lightblue; text-decoration: underline">Sim, fechar o Fatalator!</a></div>';
         return d;
     };
 
