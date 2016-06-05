@@ -21,11 +21,21 @@
     ];
 
     var createFatalator = function(keyword) {
-        if (keyword == "linkedin") {
-            var msg = 'Procurando emprego né safado? ¬¬'
-        }
-        else {
-            var msg = 'Entrando no <span id="fatalator-host" style="text-transform: capitalize; color: #434358; font-weight: bold">' + keyword + '</span> né safado?<br>tá sem trampo? ¬¬';
+        switch(keyword) {
+            case "linkedin":
+                var msg = 'Procurando emprego né, pilantra? ¬¬';
+                break;
+            case "instagram":
+            case "pinterest":
+            case "flickr":
+                var msg = 'Fica vendo fotinha por aí né, pilantra? ¬¬';
+                break;
+            case "whatsapp":
+            case "telegram":
+                var msg = 'Só na conversa fiada aí né, pilantra? ¬¬';
+                break;
+            default:
+                var msg = 'Entrando no <span id="fatalator-host" style="text-transform: capitalize; color: #434358; font-weight: bold">' + keyword + '</span> né pilantra?<br>tá sem trampo? ¬¬';
         }
 
         var d = document.createElement('DIV'); 
